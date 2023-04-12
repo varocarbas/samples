@@ -53,7 +53,7 @@ public class samples_start
 			paths.update_dir(paths.DIR_CRYPTO, samples.PERFECT_LOCATION);
 			paths.update_dir(paths.DIR_CREDENTIALS, samples.PERFECT_LOCATION);
 
-			db.update_credentials(db_crypto.SOURCE, user, username, password);
+			db.update_credentials(db_crypto.get_source(), user, username, password);
 		}
 	}
 }
