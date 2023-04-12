@@ -79,7 +79,7 @@ public class samples_encryption
 		//---
 		String sample_id = "db_crypto";
 		
-		db.create_table(db_crypto.SOURCE, true);
+		db.create_table(db_crypto.get_source(), true);
 
 		crypto.store_in_db();
 		if (!run_simple(sample_id)) return;
@@ -90,7 +90,7 @@ public class samples_encryption
 		//---
 		sample_id = "db_info";
 
-		db.create_table(db_info.SOURCE, true);
+		db.create_table(db_info.get_source(), true);
 		
 		HashMap<String, String> input = new HashMap<String, String>();
 		input.put("enc1", "1");
